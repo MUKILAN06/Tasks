@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Text Speed</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 80vh;
+            margin: 0;
+            padding: 50px 0;
+        }
+
+        .display {
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        #speedValue {
+            width: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="textInput" placeholder="Type something...">
+    <div id="display" class="display"></div>
+    <div class="counter-box">
+        <button id="decreaseBtn">-</button>
+        <input type="number" id="speedValue" value="1" min="1">
+        <button id="increaseBtn">+</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
